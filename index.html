@@ -129,64 +129,64 @@
                             </ul>
                             <ul class="items list-unstyled clearfix animated hiding mb-0" data-animation="fadeInRight">
                                 <li class="item branding">
-                                    <a href="img/work/1.jpg" data-gall="work">
-                                    	<img src="img/work/1.jpg">
+                                    <a href="http://wx3.sinaimg.cn/large/007aJntyly1fumbt4h1h8j31hc0u0gm9.jpg" data-gall="work">
+                                    	<img src="http://wx3.sinaimg.cn/large/007aJntyly1fumbt4h1h8j31hc0u0gm9.jpg">
                                         <div class="overlay">
                                             <span></span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="item photography">
-                                    <a href="img/work/2.jpg" data-gall="work">
-                                        <img src="img/work/2.jpg">
+                                    <a href="http://wx4.sinaimg.cn/large/007aJntyly1fumbt4zoeaj31z3143mym.jpg" data-gall="work">
+                                        <img src="http://wx4.sinaimg.cn/large/007aJntyly1fumbt4zoeaj31z3143mym.jpg">
                                         <div class="overlay">
                                             <span></span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="item branding">
-                                    <a href="img/work/3.jpg" data-gall="work">
-                                        <img src="img/work/3.jpg">
+                                    <a href="http://wx3.sinaimg.cn/large/007aJntyly1fumbt5k3a1j31hc0u07tr.jpg" data-gall="work">
+                                        <img src="http://wx3.sinaimg.cn/large/007aJntyly1fumbt5k3a1j31hc0u07tr.jpg">
                                         <div class="overlay">
                                             <span></span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="item photography">
-                                    <a href="img/work/4.jpg" data-gall="work">
-                                        <img src="img/work/4.jpg">
+                                    <a href="http://wx4.sinaimg.cn/large/007aJntyly1fumbt6gi62j31gs0tpwua.jpg" data-gall="work">
+                                        <img src="http://wx4.sinaimg.cn/large/007aJntyly1fumbt6gi62j31gs0tpwua.jpg">
                                         <div class="overlay">
                                             <span></span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="item photography">
-                                    <a href="img/work/5.jpg" data-gall="work">
-                                        <img src="img/work/5.jpg">
+                                    <a href="http://wx4.sinaimg.cn/large/007aJntyly1fumbt96z1gj32gw1e0npe.jpg" data-gall="work">
+                                        <img src="http://wx4.sinaimg.cn/large/007aJntyly1fumbt96z1gj32gw1e0npe.jpg">
                                         <div class="overlay">
                                             <span></span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="item web">
-                                    <a href="img/work/6.jpg" data-gall="work">
-                                        <img src="img/work/6.jpg">
+                                    <a href="http://wx4.sinaimg.cn/large/007aJntyly1fumbtafl2hj311y0lc7wh.jpg" data-gall="work">
+                                        <img src="http://wx4.sinaimg.cn/large/007aJntyly1fumbtafl2hj311y0lc7wh.jpg">
                                         <div class="overlay">
                                             <span></span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="item photography">
-                                    <a href="img/work/7.jpg" data-gall="work">
-                                        <img src="img/work/7.jpg">
+                                    <a href="http://wx4.sinaimg.cn/large/007aJntyly1fumbtbl7cij31hc0u04qp.jpg" data-gall="work">
+                                        <img src="http://wx4.sinaimg.cn/large/007aJntyly1fumbtbl7cij31hc0u04qp.jpg">
                                         <div class="overlay">
                                             <span></span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="item web">
-                                    <a href="img/work/8.jpg" data-gall="work">
-                                        <img src="img/work/8.jpg">
+                                    <a href="http://wx4.sinaimg.cn/large/007aJntyly1fumbtcbjhdj311y0lchdt.jpg" data-gall="work">
+                                        <img src="http://wx4.sinaimg.cn/large/007aJntyly1fumbtcbjhdj311y0lchdt.jpg">
                                         <div class="overlay">
                                             <span></span>
                                         </div>
@@ -441,6 +441,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.3.3/jquery.appear.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.2/venobox.min.js"></script>
     <script src="js/script.js?v=1.0"></script>
+	<script>
+        document.onkeydown=function(){
+            var e = window.event||arguments[0];
+            if(e.keyCode==123){
+                return false;
+            }else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==73)){
+                return false;
+            }else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==67)) {
+                return false;
+            }else if((e.ctrlKey)&&(e.keyCode==85)){
+                return false;
+            }else if((e.ctrlKey)&&(e.keyCode==83)){
+                return false;
+            }
+        }
+        document.oncontextmenu=function(){
+            return false;
+        }
+    </script>
+    <script>
+        (function() {
+            var OriginTitile = document.title, titleTime;
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) {
+                    document.title = '揠?洭嬽p祠?寋鈓□瑢??f';
+                    clearTimeout(titleTime);
+                } else {
+                    document.title = '(つェ⊂)咦!又好了!';
+                    titleTime = setTimeout(function() {
+                        document.title = OriginTitile;
+                    },2000);
+                }
+            });
+        })();
+    </script>
 </body>
 
 </html>
