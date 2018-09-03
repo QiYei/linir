@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0, user-scalable=no" />
     <title>QAQ</title>
-    <style>::-webkit-scrollbar {display:none}
-	*{margin: 0;}</style>
+    <style>::-webkit-scrollbar {display:none}*{margin: 0;}</style>
 </head>
 <body style="background-color:#fbfbf9;">
     <div align="center" style="padding-top: 100px;">
-	<a href="./indexqy">
-	<img src="https://i.loli.net/2018/09/03/5b8cf541d4ed1.gif" width="350">
+    	<a href="JavaScript:qiye('你瞅啥')">
+        	<img src="https://i.loli.net/2018/09/03/5b8cf541d4ed1.gif" width="350">
         </a>
-	<h1>什么都没有...</h1>
+        <h1>什么都没有...</h1>
     </div>
+    <script>
+        document.onkeydown=function(){
+            var e = window.event||arguments[0];
+            if(e.keyCode==123){
+                return false;
+            }else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==73)){
+                return false;
+            }else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==67)) {
+                return false;
+            }else if((e.ctrlKey)&&(e.keyCode==85)){
+                return false;
+            }else if((e.ctrlKey)&&(e.keyCode==83)){
+                return false;
+            }
+        };
+        document.oncontextmenu=function(){
+            return false;
+        };
+
+         function qiye(){
+         	var date = new Date();
+            var b = date.getMinutes();
+         	var OriginTitile = document.title;
+         	var sss = prompt('嗯 (｀・ω・´)？ \nPs：密码只有两位数','');
+
+         	if (sss == b) {
+         		alert('密码正确(｀・ω・´)');
+         		window.location="https://www.linir.cn/indexqy";
+                return;
+         	} else if (sss == "") {
+         		alert('密码不能为空' + OriginTitile);
+                return;
+         	} else {
+         		alert('sorry，密码不是 [' + sss + '] （￣へ￣）\n再来一次吧(｀・ω・´)');
+         		return;
+         	}
+		};
+	</script>
 </body>
 </html>
