@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0, user-scalable=no" />
+    <script src="//pv.sohu.com/cityjson?ie=utf-8"></script>  
+    <title>IP</title>
+    <style>
+        body{background: #f0f0f0}
+        .con{position:relative;height:1.875rem;line-height: 1.875rem;margin:2.47rem auto;text-align: center;}
+        .con i{display:block;height:1px;background:#e1e1e1;position:absolute;top:0.9rem;width:100%;}
+        .con p{
+            display:inline-block;
+            font-size: 0.75rem;
+            color:#c1c1c1;
+            background:rgba(240,240,240,1);
+            padding:0 1.875rem;
+            text-align: center;
+            margin:0 auto;
+            position:relative;
+            z-index:2;}
+    </style>
+</head>
+<body>
+    <div>
+        <h1 align="center" style="padding-top: 200px;">当前IP查看</h1><br><br>
+    </div>
+    <script>  
+        document.write('<h2 align="center" >' + 'IP：'+returnCitySN["cip"] + '<br><br>地址：' + returnCitySN["cname"] + '</h2>')  
+    </script>
+    <div class="con">
+        <i></i>
+        <p>(｀・ω・´)</p>
+    </div>
+</body>
+</html>
