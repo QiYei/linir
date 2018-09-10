@@ -13,7 +13,7 @@
 <body style="background-color:#fbfbf9;">
     <div align="center" style="padding-top: 80px;">
     	<a href="JavaScript:qiye('你瞅啥')">
-        	<img src="http://wx3.sinaimg.cn/large/007aJntyly1fuwqi18j23g30dw0af0y2.gif" width="350">
+        	<img src="http://wx3.sinaimg.cn/large/007aJntyly1fuwqi18j23g30dw0af0y2.gif" width="350" draggable="false">
         </a>
         <h1>什么都没有...</h1>
     </div>
@@ -35,7 +35,11 @@
         document.oncontextmenu=function(){
             return false;
         };
-
+	
+	function fk() {
+            window.location="./ip";
+        };
+	    
          function qiye(){
          	var date = new Date();
             var b = date.getMinutes();
@@ -54,7 +58,7 @@
          		return;
          	}
 		};
-	    	document.write('<br><br><br><div class="con" style="width: 96%;margin-top: 120px;"><i></i><p>' + 'IP：'+returnCitySN["cip"] + '&emsp;地址：' + returnCitySN["cname"] + '</p></div>');
+	    	document.write('<br><br><br><div class="con" style="width: 96%;margin-top: 120px;"><i></i><p>' + 'IP：<a href="JavaScript:qy(0)" onclick="fk()" style="text-decoration: none;color: #c1c1c1;">'+returnCitySN["cip"] + '</a>&emsp;地址：' + returnCitySN["cname"] + '</p></div>');
 	</script>
 </body>
 </html>
